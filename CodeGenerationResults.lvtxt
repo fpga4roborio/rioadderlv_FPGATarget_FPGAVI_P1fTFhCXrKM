@@ -1,0 +1,409 @@
+<CodeGenerationResults.lvtxt>
+<CodeGenerationScratchPad>
+   <AllowEnableRemoval>false</AllowEnableRemoval>
+   <ClipInstanceList>
+      <ClipInstance name="Adder">
+         <Value>theCLIPs/Adder_CLIP0</Value>
+      </ClipInstance>
+   </ClipInstanceList>
+   <DerivedClockSourcePinList></DerivedClockSourcePinList>
+   <FpgaCompilation>
+      <Architecture>vhdl_modgen</Architecture>
+      <DeviceCategory>roboRIO</DeviceCategory>
+      <DeviceFamily>zynq</DeviceFamily>
+      <DeviceFamilyForLabVIEW>ZynqLike</DeviceFamilyForLabVIEW>
+      <FPGADevice>xc7z020</FPGADevice>
+      <Package>clg400</Package>
+      <ProcessPropertyList>
+         <Process name="Synthesize - Vivado">
+            <CommandArguments>
+               <Command name="synth_design">
+                  <Option name="flatten_hierarchy">
+                     <Value>full</Value>
+                  </Option>
+                  <Flag name="keep_equivalent_registers">
+                  </Flag>
+               </Command>
+            </CommandArguments>
+            <PropertyList>
+               <Property name="(param)synth.elaboration.rodinMoreOptions">
+                  <Value>rt::set_parameter max_loop_limit 1000000;</Value>
+               </Property>
+            </PropertyList>
+         </Process>
+         <Process name="Optimize Logic">
+            <CommandArguments>
+               <Command name="opt_design">
+                  <Option name="directive">
+                     <Value>Default</Value>
+                  </Option>
+               </Command>
+            </CommandArguments>
+            <PropertyList></PropertyList>
+         </Process>
+         <Process name="Place">
+            <CommandArguments>
+               <Command name="place_design">
+                  <Option name="directive">
+                     <Value>Default</Value>
+                  </Option>
+               </Command>
+            </CommandArguments>
+            <PropertyList>
+               <Property name="general.maxThreads">
+                  <Value>4</Value>
+               </Property>
+            </PropertyList>
+         </Process>
+         <Process name="Optimize Timing">
+            <CommandArguments>
+               <Command name="phys_opt_design">
+                  <Option name="directive">
+                     <Value>Default</Value>
+                  </Option>
+               </Command>
+            </CommandArguments>
+            <PropertyList></PropertyList>
+         </Process>
+         <Process name="Route">
+            <CommandArguments>
+               <Command name="route_design">
+                  <Option name="directive">
+                     <Value>Default</Value>
+                  </Option>
+               </Command>
+            </CommandArguments>
+            <PropertyList>
+               <Property name="general.maxThreads">
+                  <Value>4</Value>
+               </Property>
+            </PropertyList>
+         </Process>
+         <Process name="Generate Programming File">
+            <PropertyList>
+               <Property name="BITSTREAM.STARTUP.DONE_CYCLE">
+                  <Value>6</Value>
+               </Property>
+               <Property name="BITSTREAM.STARTUP.GWE_CYCLE">
+                  <Value>4</Value>
+               </Property>
+               <Property name="BITSTREAM.CONFIG.UNUSEDPIN">
+                  <Value>Pullnone</Value>
+               </Property>
+            </PropertyList>
+         </Process>
+      </ProcessPropertyList>
+      <SpeedGrade>-1</SpeedGrade>
+      <Top>toplevel_gen</Top>
+      <UseBinaryConfiguration>FALSE</UseBinaryConfiguration>
+   </FpgaCompilation>
+   <NiFpga>
+      <ControlAndIndicatorNamesAndTypes>
+         <dataInA_ctl_0>I8</dataInA_ctl_0>
+         <dataInB_ctl_1>I8</dataInB_ctl_1>
+         <dataOut_CLIP_ind_2>I8</dataOut_CLIP_ind_2>
+      </ControlAndIndicatorNamesAndTypes>
+      <RunWhenLoaded>false</RunWhenLoaded>
+      <signatures>
+         <fpgaSignature>JRZgP4GVqsjxbG8ea2YxEg==</fpgaSignature>
+         <guidSignature>vOSiSukuQ9aK0IKB1auk/A==</guidSignature>
+         <namesSignature>emaNxMUmkh/MCAZj/pXIaQ==</namesSignature>
+      </signatures>
+      <version>1</version>
+   </NiFpga>
+   <ResourceList>
+      <Slices>13300</Slices>
+      <Luts>53200</Luts>
+      <FlipFlops>106400</FlipFlops>
+      <BRam>140</BRam>
+      <DSP48E>220</DSP48E>
+   </ResourceList>
+</CodeGenerationScratchPad><CompilerVersion><DisplayString>Xilinx Vivado 2021.1 (64-bit)</DisplayString><Compiler>Xilinx Vivado</Compiler><Bits>64bit</Bits><MajorVersion>2021</MajorVersion><MinorVersion>1</MinorVersion></CompilerVersion><EstimateResources>false</EstimateResources><StepList><Step>Generate Xilinx IP</Step><Step>Synthesize - Vivado</Step><Step>Optimize Logic</Step><Step>Place</Step><Step>Optimize Timing</Step><Step>Route</Step><Step>Generate Programming File</Step><Step>Finalize Programming File</Step></StepList><MergedIdenticalDerivedClocks>true</MergedIdenticalDerivedClocks><BitfileContents><?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Bitfile>
+	<BitfileVersion>4.0</BitfileVersion>
+	<Documentation>
+		<BuildSpecVersion />
+		<BuildSpecDescription />
+	</Documentation>
+	<SignatureRegister>2516603F8195AAC8F16C6F1E6B663112</SignatureRegister>
+	<SignatureGuids>BCE4A24AE92E43D68AD08281D5ABA4FC</SignatureGuids>
+	<SignatureNames>7A668DC4C526921FCC080663FE95C869</SignatureNames>
+	<TimeStamp></TimeStamp>
+	<CompilationStatus></CompilationStatus>
+	<BitstreamVersion>2</BitstreamVersion>
+	<VI>
+		<Name>FPGA VI.vi</Name>
+		<RegisterList>
+			<Register>
+				<Name>dataInA</Name>
+				<Hidden>false</Hidden>
+				<Indicator>false</Indicator>
+				<Datatype>
+					<I8>
+						<Name>dataInA</Name>
+					</I8>
+				</Datatype>
+				<FlattenedType>1300800000000001000D4001000764617461496E41000100000000000000</FlattenedType>
+				<Grouping />
+				<Offset>98306</Offset>
+				<SizeInBits>8</SizeInBits>
+				<Class>18</Class>
+				<Internal>false</Internal>
+				<TypedefPath></TypedefPath>
+				<TypedefRelativePath></TypedefRelativePath>
+				<ID>0</ID>
+				<Bidirectional>true</Bidirectional>
+				<Synchronous>false</Synchronous>
+				<MechanicalAction>Switch When Pressed</MechanicalAction>
+				<AccessMayTimeout>false</AccessMayTimeout>
+				<RegisterNode>false</RegisterNode>
+				<SubControlList />
+			</Register>
+			<Register>
+				<Name>dataInB</Name>
+				<Hidden>false</Hidden>
+				<Indicator>false</Indicator>
+				<Datatype>
+					<I8>
+						<Name>dataInB</Name>
+					</I8>
+				</Datatype>
+				<FlattenedType>1300800000000001000D4001000764617461496E42000100000000000000</FlattenedType>
+				<Grouping />
+				<Offset>98310</Offset>
+				<SizeInBits>8</SizeInBits>
+				<Class>18</Class>
+				<Internal>false</Internal>
+				<TypedefPath></TypedefPath>
+				<TypedefRelativePath></TypedefRelativePath>
+				<ID>1</ID>
+				<Bidirectional>true</Bidirectional>
+				<Synchronous>false</Synchronous>
+				<MechanicalAction>Switch When Pressed</MechanicalAction>
+				<AccessMayTimeout>false</AccessMayTimeout>
+				<RegisterNode>false</RegisterNode>
+				<SubControlList />
+			</Register>
+			<Register>
+				<Name>dataOut (CLIP)</Name>
+				<Hidden>false</Hidden>
+				<Indicator>true</Indicator>
+				<Datatype>
+					<I8>
+						<Name>dataOut (CLIP)</Name>
+					</I8>
+				</Datatype>
+				<FlattenedType>130080000000000100154001000E646174614F75742028434C49502900000100000000000000</FlattenedType>
+				<Grouping />
+				<Offset>98314</Offset>
+				<SizeInBits>8</SizeInBits>
+				<Class>18</Class>
+				<Internal>false</Internal>
+				<TypedefPath></TypedefPath>
+				<TypedefRelativePath></TypedefRelativePath>
+				<ID>2</ID>
+				<Bidirectional>true</Bidirectional>
+				<Synchronous>false</Synchronous>
+				<MechanicalAction>Switch When Pressed</MechanicalAction>
+				<AccessMayTimeout>false</AccessMayTimeout>
+				<RegisterNode>false</RegisterNode>
+				<SubControlList />
+			</Register>
+			<Register>
+				<Name>ViControl</Name>
+				<Hidden>false</Hidden>
+				<Indicator>false</Indicator>
+				<Datatype>
+					<U32>
+						<Name></Name>
+					</U32>
+				</Datatype>
+				<FlattenedType></FlattenedType>
+				<Grouping />
+				<Offset>94208</Offset>
+				<SizeInBits>32</SizeInBits>
+				<Class>0</Class>
+				<Internal>true</Internal>
+				<TypedefPath></TypedefPath>
+				<TypedefRelativePath></TypedefRelativePath>
+				<ID>0</ID>
+				<Bidirectional>true</Bidirectional>
+				<Synchronous>false</Synchronous>
+				<MechanicalAction>Switch When Pressed</MechanicalAction>
+				<AccessMayTimeout>false</AccessMayTimeout>
+				<RegisterNode>false</RegisterNode>
+				<SubControlList />
+			</Register>
+			<Register>
+				<Name>DiagramReset</Name>
+				<Hidden>false</Hidden>
+				<Indicator>false</Indicator>
+				<Datatype>
+					<U32>
+						<Name></Name>
+					</U32>
+				</Datatype>
+				<FlattenedType></FlattenedType>
+				<Grouping />
+				<Offset>94216</Offset>
+				<SizeInBits>32</SizeInBits>
+				<Class>0</Class>
+				<Internal>true</Internal>
+				<TypedefPath></TypedefPath>
+				<TypedefRelativePath></TypedefRelativePath>
+				<ID>0</ID>
+				<Bidirectional>true</Bidirectional>
+				<Synchronous>false</Synchronous>
+				<MechanicalAction>Switch When Pressed</MechanicalAction>
+				<AccessMayTimeout>false</AccessMayTimeout>
+				<RegisterNode>false</RegisterNode>
+				<SubControlList />
+			</Register>
+			<Register>
+				<Name>ViSignature</Name>
+				<Hidden>true</Hidden>
+				<Indicator>true</Indicator>
+				<Datatype>
+					<Array>
+						<Name></Name>
+						<Size>4</Size>
+						<Type>
+							<U32>
+								<Name></Name>
+							</U32>
+						</Type>
+					</Array>
+				</Datatype>
+				<FlattenedType></FlattenedType>
+				<Grouping />
+				<Offset>94212</Offset>
+				<SizeInBits>128</SizeInBits>
+				<Class>0</Class>
+				<Internal>true</Internal>
+				<TypedefPath></TypedefPath>
+				<TypedefRelativePath></TypedefRelativePath>
+				<ID>0</ID>
+				<Bidirectional>false</Bidirectional>
+				<Synchronous>false</Synchronous>
+				<MechanicalAction>Switch When Pressed</MechanicalAction>
+				<AccessMayTimeout>false</AccessMayTimeout>
+				<RegisterNode>false</RegisterNode>
+				<SubControlList />
+			</Register>
+			<Register>
+				<Name>InterruptEnable</Name>
+				<Hidden>false</Hidden>
+				<Indicator>false</Indicator>
+				<Datatype>
+					<U32>
+						<Name></Name>
+					</U32>
+				</Datatype>
+				<FlattenedType></FlattenedType>
+				<Grouping />
+				<Offset>90112</Offset>
+				<SizeInBits>32</SizeInBits>
+				<Class>0</Class>
+				<Internal>true</Internal>
+				<TypedefPath></TypedefPath>
+				<TypedefRelativePath></TypedefRelativePath>
+				<ID>0</ID>
+				<Bidirectional>true</Bidirectional>
+				<Synchronous>false</Synchronous>
+				<MechanicalAction>Switch When Pressed</MechanicalAction>
+				<AccessMayTimeout>false</AccessMayTimeout>
+				<RegisterNode>false</RegisterNode>
+				<SubControlList />
+			</Register>
+			<Register>
+				<Name>InterruptMask</Name>
+				<Hidden>false</Hidden>
+				<Indicator>false</Indicator>
+				<Datatype>
+					<U32>
+						<Name></Name>
+					</U32>
+				</Datatype>
+				<FlattenedType></FlattenedType>
+				<Grouping />
+				<Offset>90120</Offset>
+				<SizeInBits>32</SizeInBits>
+				<Class>0</Class>
+				<Internal>true</Internal>
+				<TypedefPath></TypedefPath>
+				<TypedefRelativePath></TypedefRelativePath>
+				<ID>0</ID>
+				<Bidirectional>true</Bidirectional>
+				<Synchronous>false</Synchronous>
+				<MechanicalAction>Switch When Pressed</MechanicalAction>
+				<AccessMayTimeout>false</AccessMayTimeout>
+				<RegisterNode>false</RegisterNode>
+				<SubControlList />
+			</Register>
+			<Register>
+				<Name>InterruptStatus</Name>
+				<Hidden>false</Hidden>
+				<Indicator>false</Indicator>
+				<Datatype>
+					<U32>
+						<Name></Name>
+					</U32>
+				</Datatype>
+				<FlattenedType></FlattenedType>
+				<Grouping />
+				<Offset>90124</Offset>
+				<SizeInBits>32</SizeInBits>
+				<Class>0</Class>
+				<Internal>true</Internal>
+				<TypedefPath></TypedefPath>
+				<TypedefRelativePath></TypedefRelativePath>
+				<ID>0</ID>
+				<Bidirectional>true</Bidirectional>
+				<Synchronous>false</Synchronous>
+				<MechanicalAction>Switch When Pressed</MechanicalAction>
+				<AccessMayTimeout>false</AccessMayTimeout>
+				<RegisterNode>false</RegisterNode>
+				<SubControlList />
+			</Register>
+		</RegisterList>
+		<Icon>
+			<ImageType>0</ImageType>
+			<ImageDepth>8</ImageDepth>
+			<Image>////////////////////////////////////////////AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAAAAD/AP///wAAAAAAAAAAAAAAAAD//wAAAAAAAAAAAAAAAP8A/wAA/wAAAAAAAAAAAAAAAP//AAAAAAAAAAAAAAAA/wD///8AAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAAAAD/AP8AAAAAAAAAAAAAAAAAAAD//wAAAAAAAAAAAAAAAP8A/wAAAAAAAAAAAAAAAAAAAP//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAA/wD/AAD/AP///wD///8AAP///wAAAAAAAAD//wAAAAD/AP//AP8AAP8AAP8AAAD/AAAAAAAAAAAAAP//AAAAAP8A/wD//wAA/wAA//8AAP8A//8AAAAAAAAA//8AAAAA/wD/AAD/AAD/AAD/AAAA/wAA/wAAAAAAAAD//wAAAAD/AP8AAP8AAP8AAP///wAA////AP8AAAAAAP//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AAD///8A/wD/AAD//wAA/wAAAP8A////AAAAAAAA//8AAP8AAAD/AP8AAP//AAD//wD//wD/AAD/AAAAAAD//wAA//8AAAD/AAD/AAD/AP8A/wD/AP///wAAAAAAAP//AAD/AAAA/wD/AP////8A/wAAAP8A/wAAAAAAAAAA//8AAP///wD/AP8A/wAA/wD/AAAA/wD/AAAAAP8AAAD//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP///////////////////////////////////////////w==</Image>
+			<Mask>//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////8=</Mask>
+			<Colors>AP///wD//8wA//+ZAP//ZgD//zMA//8AAP/M/wD/zMwA/8yZAP/MZgD/zDMA/8wAAP+Z/wD/mcwA/5mZAP+ZZgD/mTMA/5kAAP9m/wD/ZswA/2aZAP9mZgD/ZjMA/2YAAP8z/wD/M8wA/zOZAP8zZgD/MzMA/zMAAP8A/wD/AMwA/wCZAP8AZgD/ADMA/wAAAMz//wDM/8wAzP+ZAMz/ZgDM/zMAzP8AAMzM/wDMzMwAzMyZAMzMZgDMzDMAzMwAAMyZ/wDMmcwAzJmZAMyZZgDMmTMAzJkAAMxm/wDMZswAzGaZAMxmZgDMZjMAzGYAAMwz/wDMM8wAzDOZAMwzZgDMMzMAzDMAAMwA/wDMAMwAzACZAMwAZgDMADMAzAAAAJn//wCZ/8wAmf+ZAJn/ZgCZ/zMAmf8AAJnM/wCZzMwAmcyZAJnMZgCZzDMAmcwAAJmZ/wCZmcwAmZmZAJmZZgCZmTMAmZkAAJlm/wCZZswAmWaZAJlmZgCZZjMAmWYAAJkz/wCZM8wAmTOZAJkzZgCZMzMAmTMAAJkA/wCZAMwAmQCZAJkAZgCZADMAmQAAAGb//wBm/8wAZv+ZAGb/ZgBm/zMAZv8AAGbM/wBmzMwAZsyZAGbMZgBmzDMAZswAAGaZ/wBmmcwAZpmZAGaZZgBmmTMAZpkAAGZm/wBmZswAZmaZAGZmZgBmZjMAZmYAAGYz/wBmM8wAZjOZAGYzZgBmMzMAZjMAAGYA/wBmAMwAZgCZAGYAZgBmADMAZgAAADP//wAz/8wAM/+ZADP/ZgAz/zMAM/8AADPM/wAzzMwAM8yZADPMZgAzzDMAM8wAADOZ/wAzmcwAM5mZADOZZgAzmTMAM5kAADNm/wAzZswAM2aZADNmZgAzZjMAM2YAADMz/wAzM8wAMzOZADMzZgAzMzMAMzMAADMA/wAzAMwAMwCZADMAZgAzADMAMwAAAAD//wAA/8wAAP+ZAAD/ZgAA/zMAAP8AAADM/wAAzMwAAMyZAADMZgAAzDMAAMwAAACZ/wAAmcwAAJmZAACZZgAAmTMAAJkAAABm/wAAZswAAGaZAABmZgAAZjMAAGYAAAAz/wAAM8wAADOZAAAzZgAAMzMAADMAAAAA/wAAAMwAAACZAAAAZgAAADMA7gAAAN0AAAC7AAAAqgAAAIgAAAB3AAAAVQAAAEQAAAAiAAAAEQAAAADuAAAA3QAAALsAAACqAAAAiAAAAHcAAABVAAAARAAAACIAAAARAAAAAO4AAADdAAAAuwAAAKoAAACIAAAAdwAAAFUAAABEAAAAIgAAABEA7u7uAN3d3QC7u7sAqqqqAIiIiAB3d3cAVVVVAERERAAiIiIAERERAAAAAA==</Colors>
+			<Rectangle>
+				<Left>0</Left>
+				<Top>0</Top>
+				<Right>32</Right>
+				<Bottom>32</Bottom>
+			</Rectangle>
+		</Icon>
+	</VI>
+	<Project>
+		<TargetClass>roboRIO</TargetClass>
+		<AutoRunWhenDownloaded>false</AutoRunWhenDownloaded>
+		<CompilationResultsTree>
+<CompilationResults>
+   <NiFpga>
+      <BaseAddressOnDevice>0</BaseAddressOnDevice>
+      <DmaChannelAllocationList></DmaChannelAllocationList>
+      <UsedBaseClockList>
+         <BaseClock name="DmaClk">
+         </BaseClock>
+         <BaseClock name="BusClk">
+         </BaseClock>
+         <BaseClock name="40 MHz Onboard Clock">
+         </BaseClock>
+      </UsedBaseClockList>
+      <version>1</version>
+   </NiFpga>
+</CompilationResults> </CompilationResultsTree>
+		<MultipleUserClocks>false</MultipleUserClocks>
+		<AllowImplicitEnableRemoval>false</AllowImplicitEnableRemoval>
+	</Project>
+	<ClientData />
+	<BitstreamMD5></BitstreamMD5>
+	<Bitstream></Bitstream>
+</Bitfile>
+</BitfileContents><ProcessedClockData><Clock><DerivedClock>false</DerivedClock><NominalFrequency>40000000.000</NominalFrequency><TimeSpecName>Clk40</TimeSpecName><SignalName/><Alias>40 MHz Onboard Clock</Alias><ClockName>Clk40</ClockName></Clock><Clock><DerivedClock>false</DerivedClock><NominalFrequency>40000000.000</NominalFrequency><TimeSpecName>TS_BusClk</TimeSpecName><SignalName/><Alias>BusClk (Used by non-diagram components)</Alias><ClockName>BusClk</ClockName></Clock><Clock><DerivedClock>false</DerivedClock><NominalFrequency>40000000.000</NominalFrequency><TimeSpecName>TS_DmaClk</TimeSpecName><SignalName/><Alias>DmaClk (Used by non-diagram components)</Alias><ClockName>DmaClk</ClockName></Clock></ProcessedClockData><DocumentationInfo><Documentation><BuildSpecVersion>1.0.0.0</BuildSpecVersion><BuildSpecDescription/></Documentation></DocumentationInfo></CodeGenerationResults.lvtxt>

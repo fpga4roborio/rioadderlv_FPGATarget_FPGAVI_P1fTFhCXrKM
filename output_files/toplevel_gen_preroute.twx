@@ -1,0 +1,1 @@
+EthRmiiRefClk:PASS;:PASS;nirioSystemTopRoboRio_i/PsClk[1]:PASS;nirioShiftClk40by180x/mmcm_adv_inst/CLKOUT0:PASS;Clk40:PASS;Eth_gmii_to_rmii/cTxClk_reg/Q:PASS;Eth_gmii_to_rmii/cRxClk_reg/Q:PASS;

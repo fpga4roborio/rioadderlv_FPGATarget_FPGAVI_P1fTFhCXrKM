@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ReportList>
+  <ParsedReport>
+    <NameOfReport>Synthesize - Vivado_Xrpt</NameOfReport>
+    <ReportData>flipflops:10789;DSP48s:0;brams:5;luts:11092;</ReportData>
+  </ParsedReport>
+  <ParsedReport>
+    <NameOfReport>Place_Twx</NameOfReport>
+    <ReportData>EthRmiiRefClk:PASS;:PASS;nirioSystemTopRoboRio_i/PsClk[1]:PASS;nirioShiftClk40by180x/mmcm_adv_inst/CLKOUT0:PASS;Clk40:PASS;Eth_gmii_to_rmii/cTxClk_reg/Q:PASS;Eth_gmii_to_rmii/cRxClk_reg/Q:PASS;</ReportData>
+  </ParsedReport>
+  <ParsedReport>
+    <NameOfReport>Place_Xrpt</NameOfReport>
+    <ReportData>flipflops:9968;DSP48s:0;brams:5;luts:9891;slicesTotal:3468;</ReportData>
+  </ParsedReport>
+  <ParsedReport>
+    <NameOfReport>Route_PulseWidth</NameOfReport>
+    <ReportData>&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;PulseWidthReport&gt;&lt;Version&gt;1&lt;/Version&gt;&lt;Violations /&gt;&lt;/PulseWidthReport&gt;</ReportData>
+  </ParsedReport>
+  <ParsedReport>
+    <NameOfReport>Route_Twx</NameOfReport>
+    <ReportData>EthRmiiRefClk:PASS;:PASS;nirioSystemTopRoboRio_i/PsClk[1]:PASS;nirioShiftClk40by180x/mmcm_adv_inst/CLKOUT0:PASS;Clk40:PASS;Eth_gmii_to_rmii/cRxClk_reg/Q:PASS;Eth_gmii_to_rmii/cTxClk_reg/Q:PASS;</ReportData>
+  </ParsedReport>
+</ReportList>

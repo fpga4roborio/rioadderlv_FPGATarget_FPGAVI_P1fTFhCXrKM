@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DiagramObjectMap>
+<Version>1</Version>
+<Objects><Object><SignalPath>/n_Timed_Loop_43_Diagram/n_NiFpgaAG_00000003_SequenceFrame_Diagram/n_FPGA_I_slash_O_Node_8282_Diagram</SignalPath><Type>Primitive</Type><SourceFile>Z:\adder\rioAdder_lv\FPGA VI.vi</SourceFile><Id>8282</Id><Description>FPGA I/O Node</Description></Object>
+<Object><SignalPath>/n_Timed_Loop_43_Diagram/n_NiFpgaAG_00000003_SequenceFrame_Diagram/n_FPGA_I_slash_O_Node_8282_Diagram_1</SignalPath><Type>Primitive</Type><SourceFile>Z:\adder\rioAdder_lv\FPGA VI.vi</SourceFile><Id>8282</Id><Description>FPGA I/O Node</Description></Object>
+<Object><SignalPath>/n_Timed_Loop_43_Diagram/n_NiFpgaAG_00000003_SequenceFrame_Diagram/n_FPGA_I_slash_O_Node_8282_Diagram_2</SignalPath><Type>Primitive</Type><SourceFile>Z:\adder\rioAdder_lv\FPGA VI.vi</SourceFile><Id>8282</Id><Description>FPGA I/O Node</Description></Object>
+<Object><SignalPath>/n_Timed_Loop_43_Diagram/n_NiFpgaAG_00000003_SequenceFrame_Diagram/n_FPGA_I_slash_O_Node_8282_Diagram_3</SignalPath><Type>Primitive</Type><SourceFile>Z:\adder\rioAdder_lv\FPGA VI.vi</SourceFile><Id>8282</Id><Description>FPGA I/O Node</Description></Object>
+<Object><SignalPath>/n_Timed_Loop_43_Diagram/n_Input_Node_106_Diagram</SignalPath><Type>Primitive</Type><SourceFile>Z:\adder\rioAdder_lv\FPGA VI.vi</SourceFile><Id>106</Id><Description>Input Node</Description></Object>
+<Object><SignalPath>/dataInB_ctl_1/PlainControl.PlainControl</SignalPath><SourceFile>Z:\adder\rioAdder_lv\FPGA VI.vi</SourceFile><Id>7099</Id><Description>dataInB</Description></Object>
+<Object><SignalPath>/n_Timed_Loop_43_Diagram/n_prim_CVT</SignalPath><SourceFile>Z:\adder\rioAdder_lv\FPGA VI.vi</SourceFile><Id>0</Id><Description/></Object>
+<Object><SignalPath>/dataInA_ctl_0/PlainControl.PlainControl</SignalPath><SourceFile>Z:\adder\rioAdder_lv\FPGA VI.vi</SourceFile><Id>7077</Id><Description>dataInA</Description></Object>
+<Object><SignalPath>/n_Timed_Loop_43_Diagram/n_prim_CVT_1</SignalPath><SourceFile>Z:\adder\rioAdder_lv\FPGA VI.vi</SourceFile><Id>0</Id><Description/></Object>
+<Object><SignalPath>/n_Timed_Loop_43_Diagram/n_NiFpgaAG_00000003_SequenceFrame_Diagram</SignalPath><Type>Primitive</Type><SourceFile>Z:\adder\rioAdder_lv\FPGA VI.vi</SourceFile><Id>8282</Id><Description>FPGA I/O Node</Description></Object>
+<Object><SignalPath>/n_Timed_Loop_43_Diagram/n_prim_CVT_2</SignalPath><SourceFile>Z:\adder\rioAdder_lv\FPGA VI.vi</SourceFile><Id>0</Id><Description/></Object>
+<Object><SignalPath>/dataOut_CLIP_ind_2/PlainIndicator.PlainIndicator</SignalPath><SourceFile>Z:\adder\rioAdder_lv\FPGA VI.vi</SourceFile><Id>7131</Id><Description>dataOut (CLIP)</Description></Object>
+<Object><SignalPath>/n_Timed_Loop_43_Diagram/n_Output_Node_96_Diagram</SignalPath><Type>Primitive</Type><SourceFile>Z:\adder\rioAdder_lv\FPGA VI.vi</SourceFile><Id>96</Id><Description>Output Node</Description></Object>
+<Object><SignalPath>/n_Input_Node_68_Diagram</SignalPath><Type>Primitive</Type><SourceFile>Z:\adder\rioAdder_lv\FPGA VI.vi</SourceFile><Id>68</Id><Description>Input Node</Description></Object>
+<Object><SignalPath>/n_Timed_Loop_43_Diagram</SignalPath><SourceFile>Z:\adder\rioAdder_lv\FPGA VI.vi</SourceFile><Id>43</Id><Description>Timed Loop</Description></Object>
+<Object><SignalPath>/n_Timed_Loop_43</SignalPath><SourceFile>Z:\adder\rioAdder_lv\FPGA VI.vi</SourceFile><Id>92</Id><Description>Loop Timing Controller</Description></Object>
+<Object><SignalPath>/n_Output_Node_78_Diagram</SignalPath><Type>Primitive</Type><SourceFile>Z:\adder\rioAdder_lv\FPGA VI.vi</SourceFile><Id>78</Id><Description>Output Node</Description></Object>
+
+</Objects>
+</DiagramObjectMap>

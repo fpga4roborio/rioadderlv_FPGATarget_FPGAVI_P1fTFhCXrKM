@@ -1,0 +1,67 @@
+
+
+<BuildResults>
+
+  <GenerateCode>
+    <JobState>Complete</JobState>
+    <Data>
+      <ProjectPath>Z:\tutorial\rioAdder_lv.lvproj</ProjectPath>
+      <TargetName>FPGA Target</TargetName>
+      <BuildSpecName>FPGA VI</BuildSpecName>
+      <TargetDisplayName>FPGA Target (RIO0, roboRIO)</TargetDisplayName>
+      <TopLevelViPath>Z:\adder\rioAdder_lv\FPGA VI.vi</TopLevelViPath>
+      <BuildSpec>
+        <Build>
+          <allowEnableRemoval>false</allowEnableRemoval>
+          <runWhenLoaded>false</runWhenLoaded>
+          <defaultBuildSpec>true</defaultBuildSpec>
+          <buildSpecName>FPGA VI</buildSpecName>
+          <destinationDirectory>Z:\tutorial\FPGA Bitfiles</destinationDirectory>
+          <topLevelItemID>{D8FFBBF2-70A7-4294-86B9-B113019C4AFE}</topLevelItemID>
+          <buildSpecDescription/>
+        </Build>
+        <Compilation>
+          <bitfileName>rioadderlv_FPGATarget_FPGAVI_P1fTFhCXrKM.lvbitx</bitfileName>
+          <version>
+            <major>1</major>
+            <minor>0</minor>
+            <fix>0</fix>
+            <build>0</build>
+          </version>
+          <versionAutoIncrement>false</versionAutoIncrement>
+          <xilinxOptions>
+            <useRecommended>true</useRecommended>
+            <designStrategy>balanced</designStrategy>
+            <synthGoal>speed</synthGoal>
+            <synthEffort>normal</synthEffort>
+            <mapEffort>default(noTiming)</mapEffort>
+            <parEffort>standard</parEffort>
+          </xilinxOptions>
+          <vivadoOptions>
+            <strategy>Default</strategy>
+            <optDesignDirective>Default</optDesignDirective>
+            <placeDesignDirective>Default</placeDesignDirective>
+            <physOptDesignDirective>Default</physOptDesignDirective>
+            <routeDesignDirective>Default</routeDesignDirective>
+            <runPowerOptDesign>false</runPowerOptDesign>
+            <enableMultithreading>true</enableMultithreading>
+          </vivadoOptions>
+          <maxFanout>0</maxFanout>
+        </Compilation>
+      </BuildSpec>
+      <signatures>
+         <fpgaSignature>JRZgP4GVqsjxbG8ea2YxEg==</fpgaSignature>
+         <guidSignature>vOSiSukuQ9aK0IKB1auk/A==</guidSignature>
+         <namesSignature>emaNxMUmkh/MCAZj/pXIaQ==</namesSignature>
+      </signatures><Metrics>
+        <ElapsedTime>
+          <Overall>00:00:12.507</Overall>
+          <ModuleGenerator>00:00:05.932</ModuleGenerator>
+          <EliminatingDuplicates>00:00:01.277</EliminatingDuplicates>
+        </ElapsedTime>
+        <NumberVhdlFiles>217</NumberVhdlFiles>
+      </Metrics>
+    </Data>
+  </GenerateCode>
+
+<Compile><JobState>Complete</JobState><Data><CompilationStatus><Version>2.0</Version><Error><Code>0</Code><Source/><Attempts>0</Attempts></Error><CompilationTime><DateSubmitted>7/15/2024 4:36 AM</DateSubmitted><DateLastUpdated>7/15/2024 4:39 AM</DateLastUpdated><WaitingTime>00:00:13</WaitingTime><WorkingTime>00:03:01</WorkingTime></CompilationTime><CompilationParameters><DisplayString>Xilinx Vivado 2021.1 (64-bit)</DisplayString><Family>zynq</Family><Device>xc7z020</Device><Top>toplevel_gen</Top><Capability>vivado2021.1_64bit</Capability></CompilationParameters><Connection><Type>local</Type><SessionId>QJ86QnE</SessionId><JobId>S6hh16F</JobId></Connection><CurrentStepIndex>9</CurrentStepIndex><StepList><Step><StepNumber>0</StepNumber><StepType>Initialization</StepType><StepName>Initialization</StepName><Status>Transferring files from Compile Server</Status><Progress>0</Progress></Step><Step><StepNumber>1</StepNumber><StepType>Generate Xilinx IP</StepType><StepName>Generate Xilinx IP</StepName><Status>Generating Xilinx IP</Status><ElapsedTime>00:00:00.0000111</ElapsedTime><Progress>0</Progress></Step><Step><StepNumber>2</StepNumber><StepType>Synthesize - Vivado</StepType><StepName>Synthesize - Vivado</StepName><Status>Synthesizing</Status><ElapsedTime>00:01:05.9931245</ElapsedTime><Progress>0</Progress><UtilizationReport>flipflops:10789:106400;DSP48s:0:220;brams:5:140;luts:11092:53200;</UtilizationReport></Step><Step><StepNumber>3</StepNumber><StepType>Optimize Logic</StepType><StepName>Optimize Logic</StepName><Status>Optimizing logic</Status><ElapsedTime>00:00:10.7072494</ElapsedTime><Progress>75</Progress></Step><Step><StepNumber>4</StepNumber><StepType>Place</StepType><StepName>Place</StepName><Status>Placing</Status><ElapsedTime>00:00:36.0658891</ElapsedTime><Progress>80</Progress><UtilizationReport>flipflops:9968:106400;DSP48s:0:220;brams:5:140;luts:9891:53200;slicesTotal:3468:13300;</UtilizationReport><TimingReport>40 MHz Onboard Clock:PASS:25.000;</TimingReport></Step><Step><StepNumber>5</StepNumber><StepType>Optimize Timing</StepType><StepName>Optimize Timing</StepName><Status>Optimizing timing</Status><ElapsedTime>00:00:03.5451452</ElapsedTime><Progress>0</Progress></Step><Step><StepNumber>6</StepNumber><StepType>Route</StepType><StepName>Route</StepName><Status>Routing</Status><ElapsedTime>00:00:43.8495378</ElapsedTime><Progress>0</Progress><TimingReport>40 MHz Onboard Clock:PASS:25.000;</TimingReport></Step><Step><StepNumber>7</StepNumber><StepType>Generate Programming File</StepType><StepName>Generate Programming File</StepName><Status>Generating programming file</Status><ElapsedTime>00:00:13.4068216</ElapsedTime><Progress>0</Progress></Step><Step><StepNumber>8</StepNumber><StepType>Finalize Programming File</StepType><StepName>Finalize Programming File</StepName><Status>Finalizing programming file</Status><ElapsedTime>00:00:02.9203204</ElapsedTime><Progress>0</Progress></Step><Step><StepNumber>9</StepNumber><StepType>Finalization</StepType><StepName>Finalization</StepName><Status>Creating bitfile</Status><Progress>0</Progress></Step></StepList></CompilationStatus></Data></Compile></BuildResults>

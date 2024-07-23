@@ -1,0 +1,84 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Mon Jul 15 04:38:47 2024
+| Host         : DESKTOP-HU93AE5 running 64-bit major release  (build 9200)
+| Command      : report_pulse_width -file toplevel_gen.pwrpt
+| Design       : toplevel_gen
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+------------------------------------------------------------------------------------
+
+Pulse Width Report
+
+Clock Name:         Clk40
+Waveform(ns):       { 0.000 12.495 }
+Period(ns):         24.990
+Sources:            { Clk40 }
+
+Check Type        Corner  Lib Pin            Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     BUFG/I             n/a            2.155         24.990      22.835     BUFGCTRL_X0Y18   window/Clk40BufInst/I
+Max Period        n/a     MMCME2_ADV/CLKIN1  n/a            100.000       24.990      75.010     MMCME2_ADV_X1Y0  nirioShiftClk40by180x/mmcm_adv_inst/CLKIN1
+Low Pulse Width   Slow    MMCME2_ADV/CLKIN1  n/a            5.000         12.495      7.495      MMCME2_ADV_X1Y0  nirioShiftClk40by180x/mmcm_adv_inst/CLKIN1
+High Pulse Width  Slow    MMCME2_ADV/CLKIN1  n/a            5.000         12.495      7.495      MMCME2_ADV_X1Y0  nirioShiftClk40by180x/mmcm_adv_inst/CLKIN1
+
+Clock Name:         EthRmiiRefClk
+Waveform(ns):       { 0.000 10.000 }
+Period(ns):         20.000
+Sources:            { EthRmiiRefClk }
+
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location        Pin
+Min Period        n/a     BUFG/I   n/a            2.155         20.000      17.845     BUFGCTRL_X0Y17  EthRmiiRefClk_IBUF_BUFG_inst/I
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X66Y112   Eth_gmii_to_rmii/cCrsDv2_reg/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         10.000      9.500      SLICE_X66Y112   Eth_gmii_to_rmii/cCrsDv2_reg/C
+
+Clock Name:         EthRmiiRxClk
+Waveform(ns):       { 0.000 20.000 }
+Period(ns):         40.000
+Sources:            { Eth_gmii_to_rmii/cRxClk_reg/Q }
+
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location       Pin
+Min Period        n/a     BUFG/I   n/a            2.155         40.000      37.845     BUFGCTRL_X0Y2  Eth_gmii_to_rmii/RxClk_bufg/I
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         20.000      19.500     SLICE_X46Y117  nirioSystemTopRoboRio_i/Ps7_i/Ps7_roboRIO_i/processing_system7_0/U0/ENET0_GMII_RXD_i_reg[0]/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         20.000      19.500     SLICE_X46Y117  nirioSystemTopRoboRio_i/Ps7_i/Ps7_roboRIO_i/processing_system7_0/U0/ENET0_GMII_RXD_i_reg[0]/C
+
+Clock Name:         EthRmiiTxClk
+Waveform(ns):       { 0.000 20.000 }
+Period(ns):         40.000
+Sources:            { Eth_gmii_to_rmii/cTxClk_reg/Q }
+
+Check Type        Corner  Lib Pin  Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location       Pin
+Min Period        n/a     BUFG/I   n/a            2.155         40.000      37.845     BUFGCTRL_X0Y1  Eth_gmii_to_rmii/TxClk_bufg/I
+Low Pulse Width   Slow    FDRE/C   n/a            0.500         20.000      19.500     SLICE_X45Y116  nirioSystemTopRoboRio_i/Ps7_i/Ps7_roboRIO_i/processing_system7_0/U0/ENET0_GMII_COL_i_reg/C
+High Pulse Width  Slow    FDRE/C   n/a            0.500         20.000      19.500     SLICE_X45Y116  nirioSystemTopRoboRio_i/Ps7_i/Ps7_roboRIO_i/processing_system7_0/U0/ENET0_GMII_COL_i_reg/C
+
+Clock Name:         PsUartClk
+Waveform(ns):       { 0.000 8.500 }
+Period(ns):         17.000
+Sources:            { nirioSystemTopRoboRio_i/PsClk[1] }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location       Pin
+Min Period        n/a     RAMB18E1/CLKARDCLK  n/a            2.944         17.000      14.056     RAMB18_X5Y38   Com1RS232UART/NiUartx/U_RxFifo/RamFifoInst.SingleClkFifox/DualPortRAMx/InferredRamx/iRAM_reg/CLKARDCLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         8.500       7.520      SLICE_X30Y126  nirioSystemTopRoboRio_i/Ps7_i/Ps7_roboRIO_i/axi_crossbar_0/inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.wdata_router_w/wrouter_aw_fifo/gen_srls[0].gen_rep[0].srl_nx1/gen_srls[0].srl_inst/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         8.500       7.520      SLICE_X30Y126  nirioSystemTopRoboRio_i/Ps7_i/Ps7_roboRIO_i/axi_crossbar_0/inst/gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.wdata_router_w/wrouter_aw_fifo/gen_srls[0].gen_rep[0].srl_nx1/gen_srls[0].srl_inst/CLK
+
+Clock Name:         nirioShiftClk40by180x/Clk40Shifted
+Waveform(ns):       { 12.495 24.990 }
+Period(ns):         24.990
+Sources:            { nirioShiftClk40by180x/mmcm_adv_inst/CLKOUT0 }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         24.990      22.414     RAMB36_X3Y13     InchwormWithAxiBimx/InchwormWithAxiBimNetlistx/InchWorm/EnableFullScatterGather.NiDmaLinkProcessorx/LinkStorageRam.LinkStorageRamx/InferredRamx/iRAM_reg_0/CLKARDCLK
+Max Period        n/a     MMCME2_ADV/CLKOUT0  n/a            213.360       24.990      188.370    MMCME2_ADV_X1Y0  nirioShiftClk40by180x/mmcm_adv_inst/CLKOUT0
+Low Pulse Width   Slow    RAMD32/CLK          n/a            1.250         12.495      11.245     SLICE_X86Y75     InchwormWithAxiBimx/InchwormWithAxiBimNetlistx/InchWorm/EnableFullScatterGather.NiDmaLinkProcessorx/CommandFifo.CommandFifox/UseLutRam.DualPortLutRamx/LessThan64Deep.LessThan64DeepWidth[0].RAM32X1D_inst/DP/CLK
+High Pulse Width  Slow    RAMD32/CLK          n/a            1.250         12.495      11.245     SLICE_X86Y75     InchwormWithAxiBimx/InchwormWithAxiBimNetlistx/InchWorm/EnableFullScatterGather.NiDmaLinkProcessorx/CommandFifo.CommandFifox/UseLutRam.DualPortLutRamx/LessThan64Deep.LessThan64DeepWidth[0].RAM32X1D_inst/DP/CLK
+
+Clock Name:         nirioShiftClk40by180x/ClkFbOut
+Waveform(ns):       { 0.000 12.495 }
+Period(ns):         24.990
+Sources:            { nirioShiftClk40by180x/mmcm_adv_inst/CLKFBOUT }
+
+Check Type  Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location         Pin
+Min Period  n/a     BUFG/I              n/a            2.155         24.990      22.835     BUFGCTRL_X0Y3    nirioShiftClk40by180x/ClkFbOutThruBufInst/I
+Max Period  n/a     MMCME2_ADV/CLKFBIN  n/a            100.000       24.990      75.010     MMCME2_ADV_X1Y0  nirioShiftClk40by180x/mmcm_adv_inst/CLKFBIN
+
